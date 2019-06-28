@@ -339,6 +339,8 @@ input[type='email'] {
         margin-bottom: 16px;
         border-bottom: 2px solid #e5e5e5;
         padding: 15px 20px; }
+        .category .content .filters .filtered .head {
+          margin-bottom: 18px; }
         .category .content .filters .filtered .item {
           padding-left: 6px; }
           .category .content .filters .filtered .item .remove {
