@@ -720,3 +720,53 @@ input[type='email'] {
       color: #ffffff;
       margin: 0 0 0 8px;
       font-size: 12px; }
+  .category .footer {
+    height: 241px;
+    background-color: #2e2e2e;
+    text-align: center; }
+    .category .footer .menu {
+      display: flex;
+      justify-content: center;
+      height: 80px; }
+      .category .footer .menu li {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin: 50px; }
+    .category .footer .social-links {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 10px 0; }
+      .category .footer .social-links .instagram {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-instagram-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer; }
+      .category .footer .social-links .pinterest {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-pinterest-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer; }
+      .category .footer .social-links .twitter {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-twitter-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer; }
+      .category .footer .social-links .facebook {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-facebook-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer; }
+    .category .footer .copyright {
+      font-family: 'Open Sans';
+      color: #6c6c6c; }
