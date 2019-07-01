@@ -1076,7 +1076,8 @@ input[type='email'] {
     position: relative;
     max-width: 940px;
     min-height: 300px;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .product-item .product-view .gallery {
       margin-right: 45px; }
       .product-item .product-view .gallery .main-img {
@@ -1154,7 +1155,8 @@ input[type='email'] {
     .product-item .product-view .info .sizes,
     .product-item .product-view .info .quantity {
       padding: 0;
-      margin-top: 20px; }
+      margin-top: 20px;
+      padding-bottom: 10px; }
     .product-item .product-view .info .quantity .controls {
       display: flex; }
       .product-item .product-view .info .quantity .controls .decrease-btn,
@@ -1198,6 +1200,177 @@ input[type='email'] {
         font-family: 'Open Sans';
         font-size: 12px;
         cursor: pointer; }
+  .product-item .reviews {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    width: 100%;
+    padding: 42px 80px;
+    box-sizing: border-box; }
+    .product-item .reviews .head {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #2e2e2e; }
+    .product-item .reviews .review {
+      display: flex;
+      flex-wrap: wrap; }
+      .product-item .reviews .review .comment {
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e;
+        margin-left: 120px;
+        margin-top: 20px;
+        max-width: 540px; }
+      .product-item .reviews .review .published {
+        margin-top: 20px; }
+        .product-item .reviews .review .published .author {
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #2e2e2e; }
+        .product-item .reviews .review .published .time {
+          font-family: 'Open Sans';
+          font-size: 12px; }
+      .product-item .reviews .review .feedback {
+        display: flex;
+        margin-top: 26px; }
+        .product-item .reviews .review .feedback .hearts {
+          width: 36px;
+          height: 36px;
+          object-fit: contain;
+          border-radius: 36px;
+          background: #efefef url(../icon/icons-heart-red.png) no-repeat center;
+          margin-left: 100px;
+          margin-right: 10px;
+          cursor: pointer; }
+          .product-item .reviews .review .feedback .hearts span {
+            position: relative;
+            right: -50px;
+            font-family: 'Open Sans';
+            line-height: 36px; }
+        .product-item .reviews .review .feedback .comments {
+          width: 36px;
+          height: 36px;
+          object-fit: contain;
+          border-radius: 36px;
+          background: #efefef url(../icon/icons-comments-black.png) no-repeat center;
+          margin-left: 60px;
+          cursor: pointer; }
+          .product-item .reviews .review .feedback .comments span {
+            position: relative;
+            right: -50px;
+            font-family: 'Open Sans';
+            line-height: 36px; }
+    .product-item .reviews .line {
+      width: 779px;
+      height: 1px;
+      background-color: #e5e5e5;
+      margin: 34px auto; }
+    .product-item .reviews .review-form {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 24px; }
+      .product-item .reviews .review-form .label.nickname {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e;
+        margin-top: 42px; }
+      .product-item .reviews .review-form input {
+        width: 220px;
+        height: 48px;
+        border-radius: 6px;
+        border: solid 1px #e1e1e1;
+        background-color: #ffffff;
+        grid-area: 1 / 2 / 2 / 3;
+        padding: 10px;
+        margin-top: 42px; }
+      .product-item .reviews .review-form .label.review {
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e; }
+      .product-item .reviews .review-form textarea {
+        max-width: 541px;
+        height: 121px;
+        border-radius: 6px;
+        border: solid 1px #e1e1e1;
+        background-color: #ffffff;
+        grid-area: 2 / 2 / 3 / 5;
+        resize: none;
+        padding: 10px; }
+      .product-item .reviews .review-form .label.overal {
+        grid-area: 3 / 1 / 4 / 2;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #2e2e2e; }
+      .product-item .reviews .review-form .overal-rating {
+        grid-area: 3 / 2 / 4 / 3; }
+        .product-item .reviews .review-form .overal-rating .title {
+          font-size: 12px;
+          font-family: 'Open Sans'; }
+          .product-item .reviews .review-form .overal-rating .title span {
+            color: #f62f5e;
+            cursor: pointer; }
+      .product-item .reviews .review-form .submit {
+        grid-area: 4 / 2 / 5 / 3; }
+        .product-item .reviews .review-form .submit .submit-btn {
+          width: 91px;
+          height: 35px;
+          border-radius: 24px;
+          background-color: #f62f5e;
+          font-family: 'Open Sans';
+          font-size: 12px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 35px;
+          letter-spacing: normal;
+          text-align: center;
+          color: #ffffff;
+          cursor: pointer; }
+  .product-item .also-like {
+    max-width: 940px;
+    margin: 0 auto 24px auto;
+    overflow-x: auto;
+    height: 440px; }
+    .product-item .also-like .head {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #2e2e2e; }
+    .product-item .also-like .items {
+      flex-wrap: nowrap;
+      width: 150%; }
   .product-item .footer {
     height: 241px;
     background-color: #ffffff;
