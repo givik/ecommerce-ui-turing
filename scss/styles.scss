@@ -1763,3 +1763,407 @@ input[type='email'] {
     }
   }
 }
+
+.shopping-cart {
+  .header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    object-fit: contain;
+    background-color: #efefef;
+
+    .welcome {
+      margin-left: 30px;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #2e2e2e;
+
+      span {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #f62f5e;
+        cursor: pointer;
+      }
+    }
+
+    .departments {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: #2e2e2e;
+
+      li {
+        margin: 0 16px;
+      }
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+
+      .flag {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+
+      .currency {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #2e2e2e;
+        margin-right: 60px;
+      }
+    }
+
+    .bag {
+      display: flex;
+
+      .cart {
+        width: 20px;
+        height: 20px;
+        margin-right: 19px;
+        background: url(../icon/icons-bag.png);
+        position: relative;
+
+        span {
+          background: #f62f5e;
+          border-radius: 100%;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          top: -12px;
+          right: -12px;
+          color: #ffffff;
+          font-size: 16px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: center;
+        }
+      }
+
+      .amount {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #2e2e2e;
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .top-nav {
+    height: 72px;
+    object-fit: contain;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 4px;
+      color: #f62f5e;
+      margin-left: 30px;
+    }
+
+    .menu-icon {
+      margin-left: auto;
+      margin-right: 30px;
+      cursor: pointer;
+
+      div {
+        width: 30px;
+        height: 2px;
+        border-bottom: solid 2px #f62f5e;
+        border-radius: 4px;
+        margin: 6px 0;
+      }
+    }
+  }
+
+  .cart-content {
+    max-width: 940px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    position: relative;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+    .container {
+      padding: 42px 80px 0 80px;
+    }
+
+    .head {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      color: #2e2e2e;
+    }
+
+    .close-btn {
+      right: 25px;
+      top: 25px;
+      position: absolute;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    table {
+      margin-top: 30px;
+      border-collapse: collapse;
+
+      th:nth-child(1) {
+        text-align: left;
+        width: 280px;
+      }
+
+      th {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #b4b4b4;
+        border-bottom: 2px solid #e5e5e5;
+        height: 50px;
+      }
+
+      td:nth-child(1) {
+        display: flex;
+
+        .product-img {
+          width: 96px;
+          height: 96px;
+          border: solid 1px #e5e5e5;
+          background-color: #ffffff;
+          position: relative;
+          top: -10px;
+          margin-right: 20px;
+        }
+
+        .product-info {
+          text-align: left;
+        }
+
+        .title {
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #2e2e2e;
+        }
+
+        .code {
+          font-family: 'Open Sans';
+          font-size: 16px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #2e2e2e;
+          margin-top: 6px;
+        }
+
+        .remove {
+          margin-top: 8px;
+
+          .remove-btn {
+            font-size: 12px;
+            font-family: 'Open Sans';
+
+            span {
+              color: #f62f5e;
+            }
+          }
+        }
+      }
+
+      td:nth-child(2) {
+        font-family: 'Open Sans';
+        color: #6c6c6c;
+        font-size: 18px;
+      }
+
+      td:nth-child(4) {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: 1.03px;
+        text-align: center;
+        color: #2e2e2e;
+      }
+
+      td {
+        height: 100px;
+        text-align: center;
+        padding-top: 27px;
+      }
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+
+      .decrease-btn,
+      .increase-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 36px;
+        background: #efefef;
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+        font-family: 'Open Sans';
+        align-self: center;
+      }
+
+      .count-value {
+        width: 50px;
+        height: 36px;
+        border-radius: 50px;
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        text-align: center;
+        margin: 0 4px;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      height: 96px;
+      background-color: #efefef;
+      padding: 22px 120px 0 80px;
+
+      .back-to-shop-btn {
+        width: 163px;
+        height: 48px;
+        border-radius: 24px;
+        line-height: 48px;
+        background-color: #ffffff;
+        color: #f62f5e;
+        text-align: center;
+        font-family: 'Open Sans';
+      }
+
+      .checkout-btn {
+        text-align: center;
+        font-family: 'Open Sans';
+        width: 163px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 24px;
+        background-color: #f62f5e;
+        color: #ffffff;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .footer {
+    height: 241px;
+    background-color: #ffffff;
+    text-align: center;
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      height: 80px;
+
+      li {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e2e2e;
+        margin: 50px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 10px 0;
+
+      .instagram {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-instagram-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .pinterest {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-pinterest-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .twitter {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-twitter-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .facebook {
+        width: 40px;
+        height: 40px;
+        background: url(../icon/icons-facebook-black.png) no-repeat center;
+        margin: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .copyright {
+      font-family: 'Open Sans';
+      color: #6c6c6c;
+    }
+  }
+}
